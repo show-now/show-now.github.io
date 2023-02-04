@@ -1,0 +1,103 @@
+<html lang="en" dir="ltr"><head>
+      <meta charset="utf-8">
+      <title>file:///C:/Users/</title>
+      <style>
+
+/* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+.brand{font-size:28px;text-decoration:none}
+.soft-text{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+.soft-text .text-box{
+  height: auto;
+  max-width: auto;
+  width: 100%;
+  margin: 5px 0;
+}
+.soft-text .text-box .soft{
+  font-size: 18px;
+  font-weight: 600;
+  margin: 4px;
+}
+.soft-text .text-box textarea{
+  height: 0.1px;
+  width: 0.1px;
+  font-size: 1px;
+  outline: none;
+}
+.text-box textarea::-webkit-scrollbar{
+  display: none;
+}
+
+    </style>
+   </head>
+   
+   
+ <body>
+
+
+
+<div class="soft-text">
+  <div class="text-box HTML">
+    <textarea id="c10" readonly >
+&lt;html&gt;
+&lt;head&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+function sub()
+{
+if(document.getElementById(&quot;t1&quot;).value == &quot;&quot;)
+alert(&quot;Please Enter your Name&quot;);
+else if(document.getElementById(&quot;t2&quot;).value == &quot;&quot;)
+alert(&quot;Please Enter a Password&quot;);
+else if(document.getElementById(&quot;t2&quot;).value != document.getElementById(&quot;t3&quot;).value)
+alert(&quot;Please Enter Eorrect Password&quot;);
+else if(document.getElementById(&quot;t4&quot;).value == &quot;&quot;)
+alert(&quot;Please Enter Your Address&quot;);
+else
+alert(&quot;Form has been Submitted&quot;);
+}
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;form&gt;
+&lt;p align=&quot;center&quot;&gt;
+User Name:&lt;input type=&quot;text&quot; id=&quot;t1&quot;&gt;&lt;br&gt;&lt;br&gt;
+Password:&lt;input type=&quot;text&quot; id=&quot;t2&quot;&gt;&lt;br&gt;&lt;br&gt;
+Confirm Password:&lt;input type=&quot;text&quot; id=&quot;t3&quot;&gt;&lt;br&gt;&lt;br&gt;
+Address:&lt;textarea rows=&quot;2&quot; cols=&quot;25&quot; id =&quot;t4&quot;&gt;&lt;/textarea&gt;&lt;br&gt;&lt;br&gt;
+&lt;input type=&quot;button&quot; value=&quot;submit&quot; onclick=&quot;sub()&quot;&gt;
+&lt;input type=&quot;reset&quot; value=&quot;clear all&quot;&gt;
+&lt;/p&gt;
+&lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </textarea>
+    <button id="c10Button">C10</button>
+  </div>
+</div>
+
+<script>
+let HTML = document.getElementById("c10");
+let HTMLButton = document.getElementById("c10Button");
+
+HTMLButton.onclick = function() {
+  HTML.select();
+  document.execCommand("copy");
+  HTMLButton.innerText = "Copied!"
+}
+</script>
+
+
+</body>
+</html>

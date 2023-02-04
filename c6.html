@@ -1,0 +1,149 @@
+
+
+
+
+<html lang="en" dir="ltr"><head>
+      <meta charset="utf-8">
+      <title>file:///C:/Users/</title>
+      <style>
+
+/* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+.brand{font-size:28px;text-decoration:none}
+.soft-text{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+.soft-text .text-box{
+  height: auto;
+  max-width: auto;
+  width: 100%;
+  margin: 5px 0;
+}
+.soft-text .text-box .soft{
+  font-size: 18px;
+  font-weight: 600;
+  margin: 4px;
+}
+.soft-text .text-box textarea{
+  height: 0.1px;
+  width: 0.1px;
+  font-size: 1px;
+  outline: none;
+}
+.text-box textarea::-webkit-scrollbar{
+  display: none;
+}
+
+    </style>
+   </head>
+   
+   
+ <body>
+
+
+
+<div class="soft-text">
+  <div class="text-box HTML">
+    <textarea id="c10" readonly >
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Tamil&lt;/title&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;mystyle.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;H1&gt;Tamil&lt;/H1&gt;
+&lt;br&gt;
+&lt;P1&gt;
+Tamil is a Dravidian language predominantly spoken by the Tamil people of India and Sri Lanka,
+and by the Tamil diaspora, Sri Lankan Moors, Burghers, Douglas, and Chindians. Tamil is an official
+language of two countries: Sri Lanka and Singapore.
+&lt;/P1&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;P2&gt;
+It has official status in the Indian state of Tamil Nadu and the Indian Union Territory of
+Puducherry. It is used as one of the languages of education in Malaysia, along with English, Malay
+and Mandarin.
+&lt;/P2&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;P3&gt;
+Tamil is spoken by significant minorities in the four other South Indian states of Kerala, Karnataka,
+Andhra Pradesh and Telangana and the Union Territory of the Andaman and Nicobar Islands. It is
+one of the 22 scheduled languages of India.
+&lt;/P3&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </textarea>
+    <button id="c10Button">C6</button>
+  </div>
+</div>
+
+<script>
+let HTML = document.getElementById("c10");
+let HTMLButton = document.getElementById("c10Button");
+
+HTMLButton.onclick = function() {
+  HTML.select();
+  document.execCommand("copy");
+  HTMLButton.innerText = "Copied!"
+}
+</script>
+
+
+<div class="soft-text">
+  <div class="text-box css">
+    <textarea id="css" readonly >
+H1
+{
+Font-family: "Arial Black";
+Text-align:center;
+Border : 2px solid blue;
+}
+P1
+{
+Font-family: "Century";
+Font-style : Bold;
+Color : Red;
+}
+P2
+{
+Font-family: "Bookman Old Style";
+Font-style : Italic;
+Color : Blue;
+}
+P3
+{
+font-family: "Century Gothic";
+color : Green;
+}
+    </textarea>
+	<p style="font-size: 10px;">mystyle.css</p>
+    <button id="cssButton">Css</button>
+  </div>
+</div>
+
+<script>
+let css = document.getElementById("css");
+let cssButton = document.getElementById("cssButton");
+
+cssButton.onclick = function() {
+  css.select();
+  document.execCommand("copy");
+  cssButton.innerText = "Copied!"
+}
+</script>
+
+
+</body>
+</html>

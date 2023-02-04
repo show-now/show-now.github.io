@@ -1,0 +1,105 @@
+<html lang="en" dir="ltr"><head>
+      <meta charset="utf-8">
+      <title>file:///C:/Users/</title>
+      <style>
+
+/* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+.brand{font-size:28px;text-decoration:none}
+.soft-text{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+.soft-text .text-box{
+  height: auto;
+  max-width: auto;
+  width: 100%;
+  margin: 5px 0;
+}
+.soft-text .text-box .soft{
+  font-size: 18px;
+  font-weight: 600;
+  margin: 4px;
+}
+.soft-text .text-box textarea{
+  height: 0.1px;
+  width: 0.1px;
+  font-size: 1px;
+  outline: none;
+}
+.text-box textarea::-webkit-scrollbar{
+  display: none;
+}
+
+    </style>
+   </head>
+   
+   
+ <body>
+
+
+
+<div class="soft-text">
+  <div class="text-box HTML">
+    <textarea id="c10" readonly >
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt; Weekday &lt;/title&gt;
+&lt;/head&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+var n=prompt(&quot;Enter a number between 1 and 7&quot;);
+switch (n)
+{ case (n=&quot;1&quot;):
+ document.write(&quot;Sunday&quot;);
+break;
+case (n=&quot;2&quot;):
+ document.write(&quot;Monday&quot;);
+break;
+ case (n=&quot;3&quot;):
+document.write(&quot;Tuesday&quot;);
+ break;
+case (n=&quot;4&quot;):
+document.write(&quot;Wednesday&quot;);
+break;
+case (n=&quot;5&quot;):
+document.write(&quot;Thursday&quot;);
+break;
+case (n=&quot;6&quot;):
+document.write(&quot;Friday&quot;);
+break;
+case (n=&quot;7&quot;):
+document.write(&quot;Saturday&quot;);
+break;
+default:
+document.write(&quot;Invalid Weekday&quot;);
+break; }
+&lt;/script&gt;
+&lt;/html&gt;
+    </textarea>
+    <button id="c10Button">C9</button>
+  </div>
+</div>
+
+<script>
+let HTML = document.getElementById("c10");
+let HTMLButton = document.getElementById("c10Button");
+
+HTMLButton.onclick = function() {
+  HTML.select();
+  document.execCommand("copy");
+  HTMLButton.innerText = "Copied!"
+}
+</script>
+
+
+</body>
+</html>

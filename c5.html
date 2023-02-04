@@ -1,0 +1,117 @@
+<html lang="en" dir="ltr"><head>
+      <meta charset="utf-8">
+      <title>file:///C:/Users/</title>
+      <style>
+
+/* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+.brand{font-size:28px;text-decoration:none}
+.soft-text{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+.soft-text .text-box{
+  height: auto;
+  max-width: auto;
+  width: 100%;
+  margin: 5px 0;
+}
+.soft-text .text-box .soft{
+  font-size: 18px;
+  font-weight: 600;
+  margin: 4px;
+}
+.soft-text .text-box textarea{
+  height: 0.1px;
+  width: 0.1px;
+  font-size: 1px;
+  outline: none;
+}
+.text-box textarea::-webkit-scrollbar{
+  display: none;
+}
+
+    </style>
+   </head>
+   
+   
+ <body>
+
+
+
+<div class="soft-text">
+  <div class="text-box HTML">
+    <textarea id="c10" readonly >
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt; Sets of Lists &lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;OL&gt;
+&lt;LI&gt; Tamilnadu
+&lt;OL type=a&gt;
+&lt;LI&gt; Chennai
+&lt;LI&gt; Madurai
+&lt;/OL&gt;
+&lt;LI&gt; Andhra Pradesh
+&lt;OL type=a&gt;
+&lt;LI&gt; Amaravathi
+&lt;LI&gt; Vijayawada
+&lt;/OL&gt;
+&lt;LI&gt; Kerala
+&lt;OL type=a&gt;
+&lt;LI&gt; Thiruvananthapuram
+&lt;LI&gt; Cochin
+&lt;/OL&gt;
+&lt;/OL&gt;
+&lt;UL&gt;
+&lt;LI&gt; Languages
+&lt;UL type=circle&gt;
+&lt;LI&gt;Tamil
+&lt;LI&gt;Malayalam
+&lt;LI&gt;Telugu
+&lt;/UL&gt;
+&lt;LI&gt; Science
+&lt;UL type=circle&gt;
+&lt;LI&gt;Physics
+&lt;LI&gt;Chemistry
+&lt;LI&gt;Zoology
+&lt;/UL&gt;
+&lt;LI&gt; Humanities
+&lt;UL type=circle&gt;
+&lt;LI&gt;History
+&lt;LI&gt;Commerce
+&lt;LI&gt;Economics
+&lt;/UL&gt;
+&lt;/UL&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+    </textarea>
+    <button id="c10Button">C5</button>
+  </div>
+</div>
+
+<script>
+let HTML = document.getElementById("c10");
+let HTMLButton = document.getElementById("c10Button");
+
+HTMLButton.onclick = function() {
+  HTML.select();
+  document.execCommand("copy");
+  HTMLButton.innerText = "Copied!"
+}
+</script>
+
+
+</body>
+</html>

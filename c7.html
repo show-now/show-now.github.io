@@ -1,0 +1,88 @@
+
+
+<html lang="en" dir="ltr"><head>
+      <meta charset="utf-8">
+      <title>file:///C:/Users/</title>
+      <style>
+
+/* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+.brand{font-size:28px;text-decoration:none}
+.soft-text{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+.soft-text .text-box{
+  height: auto;
+  max-width: auto;
+  width: 100%;
+  margin: 5px 0;
+}
+.soft-text .text-box .soft{
+  font-size: 18px;
+  font-weight: 600;
+  margin: 4px;
+}
+.soft-text .text-box textarea{
+  height: 0.1px;
+  width: 0.1px;
+  font-size: 1px;
+  outline: none;
+}
+.text-box textarea::-webkit-scrollbar{
+  display: none;
+}
+
+    </style>
+   </head>
+   
+   
+ <body>
+
+
+
+<div class="soft-text">
+  <div class="text-box HTML">
+    <textarea id="c10" readonly >
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt; Display text using JavaScript&lt;/title&gt;
+&lt;/head&gt;
+&lt;body align=center&gt;
+&lt;p&gt;
+&lt;script&gt;
+document.write(&quot;&lt;h1 align=center&gt;Welcome to JavaScript&lt;br&gt;&quot;);
+document.write(&quot;State Council of Educational Research and Traning(SCERT),&lt;br&gt;&quot;);
+document.write(&quot;Tamilnadu,Chennai.&lt;/h1&gt;&quot;);
+&lt;/script&gt;
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </textarea>
+    <button id="c10Button">C7</button>
+  </div>
+</div>
+
+<script>
+let HTML = document.getElementById("c10");
+let HTMLButton = document.getElementById("c10Button");
+
+HTMLButton.onclick = function() {
+  HTML.select();
+  document.execCommand("copy");
+  HTMLButton.innerText = "Copied!"
+}
+</script>
+
+
+</body>
+</html>
