@@ -1,0 +1,19 @@
+<html>
+<head>
+<title></title>
+<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+$(function() {
+$('a[data-auto-download]').each(function(){
+var $this = $(this);
+setTimeout(function() {
+window.location = $this.attr('href');
+}, 2000);
+});
+});
+</script>
+</head>
+<body>
+<a data-auto-download href="c1.odt">here</a>.
+</body>
+</html>
