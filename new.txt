@@ -1,0 +1,56 @@
+#!/bin/bash
+
+#Prompt the user for input
+
+echo "Choose a Linux command (1-10):"
+
+echo "1. List files"
+
+echo "2. Show current directory"
+
+echo "3. Display date and time"
+
+echo "4. Show system uptime"
+
+echo "5. Show disk usage"
+
+echo "6. Show memory usage"
+
+echo "7. Show the last logged-in user"
+
+echo "8. Show running processes"
+
+echo "9. Show system information"
+
+
+
+echo "10. Display hostname"
+
+read -p "Enter your choice (1-10): choice
+
+#Implement commands using case
+
+case $choice in
+
+1) 1s;;
+
+2) pwd;;
+
+3) date;;
+
+4) uptime;;
+
+5) df;;
+
+6) free;;
+
+7) whoami;;
+
+8) ps;;
+
+9) uname a;;
+
+10) hostname;;
+
+*) echo "Invalid choice. Please select a number between 1 and 10." ;;
+esac
